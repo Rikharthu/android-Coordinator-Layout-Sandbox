@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A ViewGroup capable of nested scrolling (may also be RecyclerView)
+It specifies a layout_behavior that maps to AppBarLayout.ScrollingViewBehavior,
+which is used to notify the AppBarLayout when scroll events occur on this particular view.
+The behavior must be established on a view that triggers the event -->
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.uberv.coordinatorlayoutsandbox.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/large_text"/>
+
+</android.support.v4.widget.NestedScrollView>
